@@ -7,17 +7,15 @@
   <link rel="stylesheet" href="./css/style.css">
   <script src="https://kit.fontawesome.com/3e8ab34298.js" crossorigin="anonymous"></script>
 </head> 
+<body class="body">
 <!--HERO/CTA-->
-<body>
-  <section class="container">
-    <nav>
+
+  <section id="section1" data-nav="HOME" class="container" >
+    <nav class="nav-menu">
       <h2>COFFEE KING</h2>
       <img src="" class="logo">
-      <ul class="nav-links">
-        <li><a href="#home"> HOME</a></li>
-        <li><a href="#shop"> SHOP </a></li>
-        <li><a href="#ourstory"> OUR STORY </a></li>
-        <li><a href="#contact"> CONTACT </a></li>
+      <ul id="nav-links" class="nav-links">
+       
       </ul>
       <div class="mobilemenu">
         <i class="fa-solid fa-bars fa-2x"></i>
@@ -27,19 +25,20 @@
       <div class="text"></div>
       <h1>WE DO COFFEE BETTER</h1>
       <p>Smooth as the day is long, our Medium Roast provides that boost you need to go for bold.</p>
-  
       <a href="" class="buybtn">BUY NOW</a>
+    </div>
   </section>
+
 
 <!--Quality INFO/Product Imagery/CTA-->
 
-    <section class="quality">
-      <h1>Ultra Premium Quality that's Unmatched</h1>
-      <p>Our 100% Arabica beans are grown from the highest quality, most nutrient rich soil from the Jungles of Nicaragua. The beans and soil are placed in a climate clontrol vacume chamber ensuring conditions are the most ideal for the Arabica bean. Once cliamte control has been acheived the vacume chamber is set to 142 PSI mimicking the conditions felt if one were to dive 100m below the surface of the water. This intense and delicate cultivation process produces the most flavorful, nutrient rich and highest quality coffee bean in the World. Our premium quality is truly unmatched. </p>
-      <p><strong>Experience Coffee Ecstasy</strong></p>
-    </section>
+  <section id="section2" data-nav="SHOP" class="quality">
+    <h1>Ultra Premium Quality that's Unmatched</h1>
+    <p>Our 100% Arabica beans are grown from the highest quality, most nutrient rich soil from the Jungles of Nicaragua. The beans and soil are placed in a climate clontrol vacume chamber ensuring conditions are the most ideal for the Arabica bean. Once cliamte control has been acheived the vacume chamber is set to 142 PSI mimicking the conditions felt if one were to dive 100m below the surface of the water. This intense and delicate cultivation process produces the most flavorful, nutrient rich and highest quality coffee bean in the World. Our premium quality is truly unmatched. </p>
+    <p><strong>Experience Coffee Ecstasy</strong></p>
+    
 
-    <section class="product">
+    <div class="product">
       <div class="box">
         <img src="images/light.jpg" alt="">
         <h1><strong>LIGHT ROAST</strong></h1>
@@ -82,11 +81,12 @@
           <a href="" class="buybtn2">BUY NOW</a>
         </div> 
       </div>
-    </section>
+    </div>
+  </section>
 
 <!--OUR STORY-->
 
-    <section class="story-container">
+    <section id="section3" data-nav="ABOUT" class="story-container">
       <div class="pic">
         <img src="images/barista.jpg" alt="">
       </div>
@@ -103,11 +103,26 @@
           </div>  
       </div>
     </section>
+    <button onclick="sendIt()" id="senditbtn">&#8593</button>
+
+<!--Email Form-->
+
+
+    <div class="emailbox">
+
+      <form action="#">
+        <div class="formbox">
+          <p>Subscribe for our Weekly Newsletter</p>
+          <input type="text" name="EmailAddress" placeholder="Enter Your Email">
+          <button  class="btn3" type="submit">Subscribe</button>
+        </div>
+      </form>
+    </div> 
 
 <!--Footer-->
-     
+    
     <footer>
-      <div class="footer-container">
+      <section id="section4" data-nav="CONTACT" class="footer-container">
         <div class="aboutus">
           <h3>ABOUT US</h3>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aliquam 
@@ -159,7 +174,7 @@
           </ul>
 
         </div>
-      </div>
+      </section>
     </footer>
     <div class="copyright">
       <p>Copyright 2022 Coffee King LLC. All Rights Reserved.</p>

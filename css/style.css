@@ -5,7 +5,7 @@
   padding:0;
   box-sizing: border-box;
   font-family: 'poppins', sans-serif;
-  background-color: black;
+  background-color: black; 
 }
 h3{
   color: #e12727;
@@ -16,34 +16,52 @@ p{
 .container{
   width: 100%;
   height: 100vh;
-  background-image: url(/Users/frontendprojects/landingpage/video.mp4);
+  background-image: url(/Users/frontendprojects/landingpage/video.mp4); 
   background-position: center;
   background-size: cover;
-  padding: 0 7%;
-  background-color: black;
+  padding: 0 0%;
+  background-color: black; 
 }
-.container h2{
+h2{
+  position: fixed;
   color: #e12727;
-  font-size: 45px;
+  font-size: 50px;
   font-weight:bolder;
-  background-color: transparent;
+  background-color: black;
+  padding: 6px;
+  text-align: left;
+  
 
 }
 nav{
-  position: sticky;
+  
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
-  background: transparent;
+  padding: 6px;
+  background: black;
+  text-align: center;
+}
+.nav-menu{
+  position: fixed;
+  top:0;
+  width: 100%;
+  padding: 18px;
+  z-index: 1;
+  
 }
 .nav-links{
+  color: #fff;
   background: transparent;
+
 }
 .nav-links li{
   list-style: none;
   display: inline-block;
   margin: 10px 30px;
+  position: sticky;
+  top: 20px;
+  left: 50px;
   
 }
 .nav-links li a{
@@ -74,15 +92,15 @@ nav{
   border-radius: 20px;
   text-decoration: none;
   font-size: 16px;
-  
 
 }
 .hero{
-  position: absolute;
+  position: relative;
   width: 40%;
-  top:10%;
-  right: 5%;
+  top:50%;
+  left: 8%;
   line-height: 1;
+  background-color: transparent;
   
   
 }
@@ -92,6 +110,7 @@ nav{
   justify-content: space-between;
   font-weight: bolder;
   background: transparent;
+  text-align: center;
   
   
  
@@ -100,54 +119,79 @@ nav{
   font-size: large;
   line-height: 1.5;
   background-color: transparent;
+  text-align: center;
 }
 .buybtn{
   position: absolute;
   top:110%;
-  left:200px;
+  left:236px;
   font-size:18px;
   font-weight: bold;
   padding: 25px;
 }
+.buybtn:hover{
+  background-color: #b62c2c;
+}
+
 .mobilemenu{
   display: none;
   color: #e12727;
 }
 
+#senditbtn{
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 30px;
+  font-size: 25px;
+  color:white;
+  border-radius: 10px;
+  background-color: #e12727;
+  z-index: 99;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+}
+.senditbtn:hover{
+  background-color: #b62c2c;
+}
+
 @media (max-width: 768px){
-  .container{
-    padding: 0;
-  }
+ 
+ 
   .nav-links{
-    position: absolute;
-    right: 0px;
-    height: 92vh;
-    top: 8vh;
-    background-color: white;
+    width: 10%;
     display: flex;
-    flex-direction: column;
-    background-color: black;
-    width: 45%;
-    align-items: center;
-    transform: translate(100%);
-    transition: 0.5s ease-in;
+    flex-direction:column;
+    background: transparent;
+    margin-top: 0%;
+    height: 40px;
+    text-align: left;
+    justify-content: space-between;
+    right: 200px;
+    padding: 20px;
+    transform: translate(100px);
+    transition: ease-in 0.5s;
+    
     
   }
   .hero{
     position: relative;
     text-align: center;
     background-color: transparent;
-    padding-top: 250px;
-    left: 50px;
+    padding-top: 150px;
+    left: 30px;
+    top: 250px;
     
   }
-  .container h2{
-    background:white ;
-    background-color: transparent;
-    font-size: 32px;
+  h2{
+    position: fixed;
+    font-size: 35px;
   }
   .hero h1{
-   font-size:40px;
+   font-size: 40px;
+  
+   
   }
   .buybtn{
     position: absolute;
@@ -157,9 +201,11 @@ nav{
   .mobilemenu{
     display: block;
     color: #e12727;
+    cursor: pointer;
   }
   .nav-links-active{
-    transform: translate(0);
+    transform: translate(-40px);
+    transition: ease-in 0.5s;
   }
 }
 
@@ -226,6 +272,9 @@ nav{
   text-decoration: none;
   font-size: 16px;
   font-weight: bold;
+}
+.buybtn2:hover{
+  background-color: #b62c2c;
 }
 @media (max-width:768px){
   .product{
@@ -310,6 +359,66 @@ nav{
   }
 }
 
+.emailbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+}
+.emailbox p{
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  background: transparent;
+  padding: 20px;
+
+
+
+}
+.formbox{
+  padding: 50px 500px;
+  border-radius: 5px;
+  background: #e12727;
+  
+  
+}
+.formbox input{
+  font-size: 18px;
+  color: black;
+  padding: 10px 10px;
+  border: none;
+  background: #fff;
+}
+.btn3{
+  color: #fff;
+  padding: 8px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  background: black;
+  cursor: pointer;
+
+}
+
+@media (max-width:768px){
+  .emailbox p{
+    font-size: 20px;
+  }
+  .formbox{
+    padding: 7px;
+  }
+  .formbox input{
+    font-size: 14px;
+  }
+  .btn3{
+    font-size: 16px;
+  }
+}
+
+  
+
+
 /* ----Footer---- */
 
 footer{
@@ -361,8 +470,12 @@ footer{
   align-content: center;
   justify-content: center;
   text-decoration: none;
-  color: #e12727;
+  color: #e12727 ;
 }
+.sci li a:hover{
+  color: #b62c2c;
+}
+
 .quicklinks{
   position: relative;
 }
