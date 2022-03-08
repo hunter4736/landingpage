@@ -331,10 +331,14 @@ nav{
   font-weight: lighter;
 }
 .video img{
+  background-image: url(/Users/frontendprojects/landingpage/Media/beans.mp4);
   padding: 20px;
   width: 700px;
   height: 250px;
   border-radius: 40px;
+  background-position: center;
+  background-size: cover;
+  border-color: transparent;
 }
 
 @media (max-width:768px){
