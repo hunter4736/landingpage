@@ -1,9 +1,3 @@
-/*  sticky header  */
-
-window.addEventListener("scroll", function(){
-    var header = document.querySelector("nav-menu");
-    header.classList.toggle("sticky", window)
-  })
 
 /* create responsive mobile menu */  
 
